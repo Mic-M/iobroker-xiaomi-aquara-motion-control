@@ -10,10 +10,13 @@
  * geschaltet.
  * Script wurde nicht getestet mit anderen Bewegungsmeldern!
  * ----------------------------------------------------
- * Version: 0.1
  * Autor: ioBroker-Forum-Name: Mic / Github-Name: Mic-M
  * Source: https://github.com/Mic-M/iobroker.xiaomi-aquara-motion-control
  * Support: https://forum.iobroker.net/topic/22034/
+ * ----------------------------------------------------
+  * Change Log:
+ *  0.2 Mic - Fix: Compare Time
+ *  0.1 Mic - Initial Release
  ******************************************************************************/
  
 
@@ -60,7 +63,7 @@ function main() {
                 if (DEBUG) log('[DEBUG] ' + MOTIONDEV[i][0] + ': Bewegungsmelder-State geändert auf Bewegung = ja');
                 // Es gab Bewegung, also prüfen, ob Licht eingeschaltet werden soll...
                 // Prüfung 1: Aber zu den definierten Zeiten
-                if(compareTime('6:30', '09:00', 'between') || compareTime('16:00', '23:30', 'between') ) {
+                if(compareTime(MOTIONDEV[i][1], MOTIONDEV[i][2], 'between') || compareTime(MOTIONDEV[i][3], MOTIONDEV[i][4], 'between') ) {
                     if (DEBUG) log('[DEBUG] ' + MOTIONDEV[i][0] + ': compareTime() ist true.')
                     // Prüfung 2: Soll auch Lichtstärke geprüft werden
                     let LuxIsGiven = true; // Default auf true, wird false gesetzt, falls nicht gegeben.
