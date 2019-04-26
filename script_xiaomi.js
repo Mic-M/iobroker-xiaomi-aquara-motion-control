@@ -13,7 +13,7 @@
  * Version: 0.1
  * Autor: ioBroker-Forum-Name: Mic / Github-Name: Mic-M
  * Source: https://github.com/Mic-M/iobroker.xiaomi-aquara-motion-control
- * Support: xxx
+ * Support: https://forum.iobroker.net/topic/22034/
  ******************************************************************************/
  
 
