@@ -1,9 +1,9 @@
 # iobroker: Bewegungsmelder-Script (für Xiaomi und andere)
 
 ## Auszug aus den Features:
-1. Beliebig viele Bewegungsmelder einbinden. Pro Bewegungsmelder/Bereich können Geräte/Lichter bei Bewegung eingeschaltet und wieder ausheschaltet werden, sobald x Sekunden keine Bewegung mehr
-2. Mehrere Bewegungsmelder pro Raum/Bereich (z.B. Flur) möglich
-3. Beliebig viele Zeiträume zum Schalten einstellbar (z.B. nur bestimmte Wochentage, Uhrzeiten, Astro, etc.)
+1. Beliebig viele Bewegungsmelder einbinden. Pro Bewegungsmelder/Bereich können Geräte/Lichter bei Bewegung eingeschaltet und wieder ausgeschaltet werden, sobald x Sekunden keine Bewegung mehr.
+2. Mehrere Bewegungsmelder pro Raum/Bereich (z.B. Flur) möglich.
+3. Beliebig viele Zeiträume zum Schalten einstellbar (z.B. nur bestimmte Wochentage, Uhrzeiten, Astro, etc.).
 4. Helligkeit (Lux) als Trigger - es wird optional nur eingeschaltet, wenn Helligkeit unter einem vorgegeben Wert ist, damit z.B. bei genügend Helligkeit nicht eingeschaltet wird.
 5. Optionale Verzögerung zum wieder einschalten: In manchen Fällen will man ggf. mit dem Bewegungsmelder nur einmalig einschalten. Da kann man für bestimmte Bewegungsmelder einstellen, dass x Sekunden (z.B. 10 Minuten = 600s) nicht mehr neu ausgelöst wird.
 6. Prüfung auf Anwesenheit (oder andere Datenpunkte): Wenn im Script konfigurierte Datenpunkte mit einem bestimmten Wert übereinstimmen, wird nicht geschaltet. Hilfreich, um z.B. nicht zu schalten, wenn keiner anwesend ist, oder etwa ein Fenster offen ist, etc.
@@ -22,6 +22,7 @@
 ## 2. Einrichtung
 
 Die Einrichtung ist im Detail im Script beschrieben. Dort sind außerdem mehrere Beispiele enthalten.
+
 Für Fragen hierzu: am besten im ioBroker-Thread stellen: [Vorlage: Bewegungsmelder Xiaomi Aqara: Geräte/Lichter steuern](https://forum.iobroker.net/topic/22034/)
 
 ## 3. Weiteres
